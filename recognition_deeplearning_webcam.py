@@ -80,7 +80,10 @@ while(True):
     processed_frame = show_recognition(frame, face_locations, face_names, conf_values)
 
     cv2.imshow("Recognizing faces", frame)
-    cv2.waitKey(1)
+    teclaPressionada = cv2.waitKey(1)
+    tecla_enter = 13
+    if teclaPressionada == tecla_enter:
+        break
 
 print ("Completed!")
 cam.release()

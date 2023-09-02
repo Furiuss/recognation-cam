@@ -1,5 +1,4 @@
 import os
-import time
 from twilio.rest import Client
 from dotenv import load_dotenv
 
@@ -14,6 +13,5 @@ meu_numero = os.getenv("MEU_NUMERO")
 def enviar_mensagem():
     message = client.messages.create(body='⚠️ALERTA CRIMINOSO!',
                                      from_=numero_twilio,
-                                     to=meu_numero)
-    time.sleep(60)
-    print(message.sid)
+                                     to=meu_numero,
+                                     media_url="https://520e-189-63-26-130.ngrok.io/imagem")

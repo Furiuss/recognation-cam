@@ -2,8 +2,8 @@ import cv2
 from ultralytics import YOLO
 import winsound
 import threading
-import whatsapp
 from PIL import Image
+import whatsapp
 
 video = cv2.VideoCapture("ex01.mp4")
 
@@ -20,7 +20,14 @@ def alarme():
 
     tocarAlarme = False
 
+def salvarImagemBandido(img):
+    image_pil = Image.fromarray(img)
 
+    image_pil.thumbnail((400, 400))
+
+    image_pil.save("imagem-bandido/imagem.png")
+
+enviado = False
 
 while True:
     check, img = video.read()
@@ -51,7 +58,19 @@ while True:
                     cv2.putText(img, "INVASOR DETECTADO", (105,65), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255),3)
                     print("Tipo da IMAGEM:", type(img))
 
-                    threading.Thread(target=whatsapp.enviar_mensagem()).start()
+                    if(enviado == False):
+
+                        # Converte porque a imagem está em BGR e vai passar para RGB :
+                        imagem_RGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+                        print("Pos da IMAGEM:", type(img))
+
+                        salvarImagemBandido(imagem_RGB)
+
+                        whatsapp.enviar_mensagem()
+
+                        enviado = True
+
 
                     if not tocarAlarme:
                         tocarAlarme = True

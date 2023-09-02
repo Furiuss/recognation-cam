@@ -56,14 +56,11 @@ while True:
                     cv2.rectangle(img2, (area[0], area[1]), (area[2], area[3]), (0, 0,255), -1)
                     cv2.rectangle(img, (100,30), (470,80), (0, 0,255), -1)
                     cv2.putText(img, "INVASOR DETECTADO", (105,65), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255),3)
-                    print("Tipo da IMAGEM:", type(img))
 
                     if(enviado == False):
 
                         # Converte porque a imagem está em BGR e vai passar para RGB :
                         imagem_RGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-                        print("Pos da IMAGEM:", type(img))
 
                         salvarImagemBandido(imagem_RGB)
 

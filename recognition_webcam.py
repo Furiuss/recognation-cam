@@ -8,8 +8,8 @@ import sys
 from helper_functions import resize_video
 
 # Face recognizer options ->  eigenfaces  |  fisherfaces  |  lbph (recommended for video)
-recognizer = "lbph"
-training_data = "lbph_classifier.yml"  # the path to the .yml file
+recognizer = "fisherfaces"
+training_data = "fisher_classifier.yml"  # the path to the .yml file
 threshold = 10e5   # leave 10e5 if you don't want to specify a threshold. Otherwise, specify the value for threshold
                    # 10e5 = 1000000  (a large number so it will always return a prediction)
 
@@ -93,7 +93,10 @@ while(True):
     processed_frame = recognize_faces(network, face_classifier, frame, face_names, threshold)
 
     cv2.imshow("Recognizing faces", processed_frame)
-    cv2.waitKey(1)
+    teclaPressionada = cv2.waitKey(1)
+    tecla_enter = 13
+    if teclaPressionada == tecla_enter:
+        break
 
 print ("Finished!")
 cam.release()

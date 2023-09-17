@@ -1,5 +1,10 @@
 import cv2
 import numpy as np
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+from PIL import Image, ImageFilter
+import matplotlib.pyplot as plt
+
 
 def removerRuido(imagem):
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
@@ -18,24 +23,40 @@ def redimensionar(imagem, largura, altura):
     imagemRedimensionada = cv2.resize(imagem, (largura, altura))
     return imagemRedimensionada
 
-def clipping(imagem):
-    valor_min = 0
-    valor_max = 255
-    imagem_clipped = np.clip(imagem, valor_min, valor_max)
-    return imagem_clipped
+def detectorDeBordasCanny(imagem):
+    suave = cv2.GaussianBlur(imagem, (7, 7), 0)
+    canny1 = cv2.Canny(suave, 5, 80)
+    canny2 = cv2.Canny(suave, 80, 200)
+    resultado = np.vstack([
+        np.hstack([imagem, suave]),
+        np.hstack([canny1, canny2])
+    ])
+    return canny1
 
-def filtragemSeletiva(imagem):
-    # Crie uma máscara com a mesma forma da imagem, preenchida com zeros
-    mascara = np.zeros(imagem.shape[:2], dtype=np.uint8)
+def detectorDeBordasSobel(imagem):
+    sobelX = cv2.Sobel(imagem, cv2.CV_64F, 1, 0)
+    sobelY = cv2.Sobel(imagem, cv2.CV_64F, 0, 1)
+    sobelX = np.uint8(np.absolute(sobelX))
+    sobelY = np.uint8(np.absolute(sobelY))
+    sobel = cv2.bitwise_or(sobelX, sobelY)
+    resultado = np.vstack([
+        np.hstack([imagem, sobelX]),
+        np.hstack([sobelY, sobel])
+    ])
+    return sobel
 
-    # Defina as coordenadas da área que você deseja filtrar seletivamente
-    x1, y1 = 0,0  # Coordenadas do canto superior esquerdo da área
-    x2, y2 = 30,100  # Coordenadas do canto inferior direito da área
+def reduzirDimensao_PCA(imagem, var_exp=0.99):
+    pca = PCA(var_exp)  # variância explicada de 0.99
+    lower_dimension_data = pca.fit_transform(imagem)
+    print(lower_dimension_data.shape)
+    approximation = pca.inverse_transform(
+        lower_dimension_data)
 
-    # Desenhe um retângulo branco na máscara para definir a área de filtro
-    cv2.rectangle(mascara, (x1, y1), (x2, y2), (255), thickness=cv2.FILLED)
+    return approximation
 
-    imagem_filtrada = cv2.bitwise_and(imagem, imagem, mask=mascara)
-    return imagem_filtrada
+def equalizacaoHistograma(imagem):
+    imagemEqualizada = cv2.equalizeHist(imagem)
+    return imagemEqualizada
+
 
 

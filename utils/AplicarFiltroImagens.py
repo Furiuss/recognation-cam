@@ -1,8 +1,10 @@
 import os
 import cv2
 import ProcessamentoImagem
+from PIL import Image,  ImageFilter
+import numpy as np
 
-pasta_imagens = "../stash/Gustavo3"
+pasta_imagens = "../stash/andre"
 
 if not os.path.exists(pasta_imagens):
     print("A pasta especificada não existe.")
@@ -22,7 +24,7 @@ else:
 
         imagem_processada = ProcessamentoImagem.removerRuido(imagem_processada)
 
-        imagem_processada = ProcessamentoImagem.clipping(imagem_processada)
+        imagem_processada = ProcessamentoImagem.equalizacaoHistograma(imagem_processada)
 
         # Salvar a imagem processada de volta na pasta
         caminho_imagem_processada = os.path.join("../stash/imagemProcessada", f"{arquivo}")

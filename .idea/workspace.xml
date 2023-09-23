@@ -32,13 +32,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/gusta/PycharmProjects/recognition-cam",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gusta/PycharmProjects/recognition-cam&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gusta\PycharmProjects\recognition-cam" />
@@ -155,11 +155,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.trainingdemo" />
       <item itemvalue="Python.AplicarFiltroImagens" />
       <item itemvalue="Python.datacollect" />
       <item itemvalue="Python.recognition_webcam" />
       <item itemvalue="Python.train_recognizers" />
+      <item itemvalue="Python.trainingdemo" />
     </list>
     <recent_temporary>
       <list>

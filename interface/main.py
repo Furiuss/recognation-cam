@@ -3,8 +3,9 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 import customtkinter as ctk
-from customtkinter import CTk
-from utils import CapturaRosto
+from utils.reconhecimento_facial import *
+from recognition_webcam import *
+from face_detection_webcam import *
 from mtcnn.mtcnn import MTCNN
 import random
 
@@ -27,8 +28,8 @@ class CustomTkinterApp:
 
         # Adicione widgets às abas (Treinamento)
 
-        self.entrada_id = ctk.CTkEntry(self.tab_treinamento, placeholder_text="ID")
-        self.entrada_id.pack(pady=10)
+        # self.entrada_id = ctk.CTkEntry(self.tab_treinamento, placeholder_text="ID")
+        # self.entrada_id.pack(pady=10)
 
         self.entrada_nome = ctk.CTkEntry(self.tab_treinamento, placeholder_text="Nome")
         self.entrada_nome.pack(pady=10)
@@ -73,9 +74,9 @@ class CustomTkinterApp:
     def capturarRosto(self):
         self.video_capture = cv2.VideoCapture(0)
 
-        if self.entrada_id.get() == "":
-            messagebox.showwarning("Aviso", "O campo ID deve ser preenchido!",parent=self.root)
-            return
+        # if self.entrada_id.get() == "":
+        #     messagebox.showwarning("Aviso", "O campo ID deve ser preenchido!",parent=self.root)
+        #     return
 
         if self.entrada_nome.get() == "":
             messagebox.showwarning("Aviso", "O campo Nome deve ser preenchido!",parent=self.root)
@@ -90,22 +91,48 @@ class CustomTkinterApp:
 
         self.mostrarWebCam()
 
+    # def mostrarWebCam(self):
+    #     _, frame = self.video_capture.read()
+    #
+    #     if frame is not None:
+    #         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    #         localizacoes_dos_rostos, face_names, conf_values = reconhecer_faces(frame, lista_encodificada,
+    #                                                                              lista_de_nomes, 0.25)
+    #         show_recognition(frame, localizacoes_dos_rostos, face_names, conf_values)
+    #         self.display_frame(frame)
+    #         self.root.after(1, self.mostrarWebCam)
+    #     else:
+    #         self.close_webcam()
+
+    # def mostrarWebCam(self):
+    #     _, frame = self.video_capture.read()
+    #     max_width = 800
+    #
+    #     if frame is not None:
+    #         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    #         if max_width is not None:
+    #             video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
+    #             frame = cv2.resize(frame, (video_width, video_height))
+    #
+    #         processed_frame = recognize_faces(network, face_classifier, frame, face_names, threshold)
+    #         self.display_frame(processed_frame)
+    #         self.root.after(1, self.mostrarWebCam)
+    #     else:
+    #         self.close_webcam()
+
     def mostrarWebCam(self):
         _, frame = self.video_capture.read()
+        max_width = 800
 
         if frame is not None:
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            detector = MTCNN()
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            faces = detector.detect_faces(frame)
-            for face in faces:
-                x, y, w, h = face["box"]
-                caminho = f'../stash/imagemProcessada/{self.entrada_nome.get()}.{self.entrada_id.get()}.{self.contador}.jpg'
-                cv2.imwrite(caminho, gray[y:y + h, x:x + w])
-                self.contador+=1
-                cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
-            self.display_frame(frame)
-            self.root.after(10, self.mostrarWebCam)
+            if max_width is not None:
+                video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
+                frame = cv2.resize(frame, (video_width, video_height))
+
+            processed_frame = detect_face_ssd(network, frame)
+            self.display_frame(processed_frame)
+            self.root.after(1, self.mostrarWebCam)
         else:
             self.close_webcam()
 

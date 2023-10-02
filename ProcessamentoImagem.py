@@ -19,7 +19,7 @@ def converterParaEscalaDeCinza(imagem):
     imagemEscalaCinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
     return imagemEscalaCinza
 
-def redimensionar(imagem, largura, altura):
+def redimensionar(imagem, largura=140, altura=140):
     imagemRedimensionada = cv2.resize(imagem, (largura, altura))
     return imagemRedimensionada
 
@@ -58,5 +58,7 @@ def equalizacaoHistograma(imagem):
     imagemEqualizada = cv2.equalizeHist(imagem)
     return imagemEqualizada
 
+def normalizar_intensidade(imagem):
+    return cv2.normalize(imagem, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)
 
 

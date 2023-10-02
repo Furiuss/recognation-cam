@@ -65,25 +65,25 @@ else:
     network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")
 
 # video capture object
-cam = cv2.VideoCapture(0)
-
-# loop over every frame of the video stream
-while(True):
-    ret, frame = cam.read()
-
-    # resize only if a max_width is specified
-    if max_width is not None:
-        video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
-        frame = cv2.resize(frame, (video_width, video_height))
-
-    if detector == "haarcascade":
-        processed_frame = detect_face(face_detector, frame)
-    else:  # SSD
-        processed_frame = detect_face_ssd(network, frame)
-
-    cv2.imshow("Detecting faces", processed_frame)
-    cv2.waitKey(1)
-
-print ("Finished!")
-cam.release()
-cv2.destroyAllWindows()
+# cam = cv2.VideoCapture(0)
+#
+# # loop over every frame of the video stream
+# while(True):
+#     ret, frame = cam.read()
+#
+#     # resize only if a max_width is specified
+#     if max_width is not None:
+#         video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
+#         frame = cv2.resize(frame, (video_width, video_height))
+#
+#     if detector == "haarcascade":
+#         processed_frame = detect_face(face_detector, frame)
+#     else:  # SSD
+#         processed_frame = detect_face_ssd(network, frame)
+#
+#     cv2.imshow("Detecting faces", processed_frame)
+#     cv2.waitKey(1)
+#
+# print ("Finished!")
+# cam.release()
+# cv2.destroyAllWindows()

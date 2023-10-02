@@ -77,24 +77,24 @@ def recognize_faces(network, face_classifier, orig_frame, face_names, threshold,
 
 
 network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")
-
-# video capture object
-cam = cv2.VideoCapture(0)
-
-# loop over every frame of the video stream
-while(True):
-    ret, frame = cam.read()
-
-    # resize only if a max_width is specified
-    if max_width is not None:
-        video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
-        frame = cv2.resize(frame, (video_width, video_height))
-
-    processed_frame = recognize_faces(network, face_classifier, frame, face_names, threshold)
-
-    cv2.imshow("Recognizing faces", processed_frame)
-    cv2.waitKey(1)
-
-print ("Finished!")
-cam.release()
-cv2.destroyAllWindows()
+#
+# # video capture object
+# cam = cv2.VideoCapture(0)
+#
+# # loop over every frame of the video stream
+# while(True):
+#     ret, frame = cam.read()
+#
+#     # resize only if a max_width is specified
+#     if max_width is not None:
+#         video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
+#         frame = cv2.resize(frame, (video_width, video_height))
+#
+#     processed_frame = recognize_faces(network, face_classifier, frame, face_names, threshold)
+#
+#     cv2.imshow("Recognizing faces", processed_frame)
+#     cv2.waitKey(1)
+#
+# print ("Finished!")
+# cam.release()
+# cv2.destroyAllWindows()

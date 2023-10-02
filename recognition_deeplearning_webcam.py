@@ -63,25 +63,25 @@ def show_recognition(frame, face_locations, face_names, conf_values):
 
 
 # video capture object (webcam) 
-cam = cv2.VideoCapture(0)
+# cam = cv2.VideoCapture(0)
 
 
 # loop over every frame of the video stream
-while(True):
-    ret, frame = cam.read()
-
-    # resize only if a max_width is specified
-    if max_width is not None:
-        video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
-        frame = cv2.resize(frame, (video_width, video_height))
-
-    face_locations, face_names, conf_values = recognize_faces(frame, list_encodings, list_names, 0.25)
-    print(face_locations)
-    processed_frame = show_recognition(frame, face_locations, face_names, conf_values)
-
-    cv2.imshow("Recognizing faces", frame)
-    cv2.waitKey(1)
-
-print ("Completed!")
-cam.release()
-cv2.destroyAllWindows()
+# while(True):
+#     ret, frame = cam.read()
+#
+#     # resize only if a max_width is specified
+#     if max_width is not None:
+#         video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
+#         frame = cv2.resize(frame, (video_width, video_height))
+#
+#     face_locations, face_names, conf_values = recognize_faces(frame, list_encodings, list_names, 0.25)
+#     # print(face_locations)
+#     processed_frame = show_recognition(frame, face_locations, face_names, conf_values)
+#
+#     cv2.imshow("Recognizing faces", frame)
+#     cv2.waitKey(1)
+#
+# print ("Completed!")
+# cam.release()
+# cv2.destroyAllWindows()

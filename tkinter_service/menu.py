@@ -16,7 +16,10 @@ class ColecaoFrame(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(master=parent, fg_color = 'transparent')
         self.pack(expand=True, fill = 'both')
-        SliderPanel(self, 'test')
+        SliderPanel(self, 'Nome')
+        Botao(self, "Capturar")
+        Botao(self, "Parar")
+        # self.entrada_nome = ctk.CTkEntry(self, selfplaceholder_text="Coloque o nome aqui")
 
 
 class TreinamentoFrame(ctk.CTkFrame):

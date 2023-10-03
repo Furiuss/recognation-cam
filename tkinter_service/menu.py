@@ -1,4 +1,5 @@
 import customtkinter as ctk
+from camera_output import CameraOutput
 from panels import *
 
 class Menu(ctk.CTkTabview):
@@ -16,9 +17,6 @@ class ColecaoFrame(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(master=parent, fg_color = 'transparent')
         self.pack(expand=True, fill = 'both')
-        SliderPanel(self, 'Nome')
-        Botao(self, "Capturar")
-        Botao(self, "Parar")
         # self.entrada_nome = ctk.CTkEntry(self, selfplaceholder_text="Coloque o nome aqui")
 
 

@@ -15,16 +15,20 @@ class CustomTkinterApp:
         self.root.title("Reconhecimento Facial")
 
         # Crie um widget Notebook para as abas
-        self.notebook = ttk.Notebook(root)
+        # self.notebook = ttk.Notebook(root)
+        self.notebook = ctk.CTkTabview(root)
+        self.notebook.add("Coleção")
+        self.notebook.add("Reconhecimento")
 
         # Crie e adicione abas ao Notebook
-        self.tab_treinamento = ctk.CTkFrame(self.notebook)
-        self.tab_treinamento.configure(fg_color="#4a4a4a")
+        self.tab_treinamento = Frame(self.notebook.tab('Coleção'))
+        self.tab_treinamento.configure()
 
-        self.tab_reconhecimento = ctk.CTkFrame(self.notebook)
+        self.tab_reconhecimento = Frame(self.notebook.tab('Reconhecimento'))
+        self.tab_reconhecimento.configure()
 
-        self.notebook.add(self.tab_treinamento, text="Treinamento")
-        self.notebook.add(self.tab_reconhecimento, text="Reconhecimento")
+        # self.notebook.add(self.tab_treinamento, text="Treinamento")
+        # self.notebook.add(self.tab_reconhecimento, text="Reconhecimento")
 
         # Adicione widgets às abas (Treinamento)
 
@@ -32,13 +36,13 @@ class CustomTkinterApp:
         # self.entrada_id.pack(pady=10)
 
         self.entrada_nome = ctk.CTkEntry(self.tab_treinamento, placeholder_text="Nome")
-        self.entrada_nome.pack(pady=10)
+        self.entrada_nome.pack()
 
         self.entrada_cpf = ctk.CTkEntry(self.tab_treinamento, placeholder_text="CPF")
-        self.entrada_cpf.pack(pady=10)
+        self.entrada_cpf.pack()
 
         self.entrada_dataNascimento = ctk.CTkEntry(self.tab_treinamento, placeholder_text="Data de Nascimento")
-        self.entrada_dataNascimento.pack(pady=10)
+        self.entrada_dataNascimento.pack()
 
         self.botao_capturarRosto = ctk.CTkButton(self.tab_treinamento, text="Capturar Rosto", command=self.capturarRosto)
         self.botao_capturarRosto.pack(side="left",ipadx=80, padx=10, pady=5)
@@ -64,7 +68,7 @@ class CustomTkinterApp:
         # Finalmente, coloque o Notebook na janela principal
         self.notebook.pack(padx=10, pady=10, fill="both", expand=True)
 
-        self.canvas = ctk.CTkCanvas(root, width=640, height=480)
+        self.canvas = ctk.CTkCanvas(root, width=640, height=480, background= '#4a4a4a', bd = 0, highlightthickness=0, relief='ridge')
         self.canvas.pack()
 
         self.video_capture = None
@@ -149,6 +153,12 @@ class CustomTkinterApp:
 
         self.botao_capturarRosto.configure(state="normal")
         self.botao_parar.configure(state="disabled")
+
+
+class Frame(ctk.CTkFrame):
+    def __init__(self, parent):
+        super().__init__(master=parent, fg_color = 'transparent')
+        self.pack(expand=True, fill = 'both')
 
 
 if __name__ == "__main__":

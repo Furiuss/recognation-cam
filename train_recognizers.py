@@ -36,36 +36,36 @@ def get_image_data(path_train):
 
   return np.array(ids), faces, face_names
 
-ids, faces, face_names = get_image_data(training_path)
+# ids, faces, face_names = get_image_data(training_path)
+#
+# print(ids)
+# print(len(faces))
+#
+# print(face_names)
 
-print(ids)
-print(len(faces))
-
-print(face_names)
-
-for n in face_names:
-  print(str(n) + " => ID " + str(face_names[n]))
-
-# store names and ids in a pickle file
-with open("face_names.pickle", "wb") as f:
-  pickle.dump(face_names, f)
+# for n in face_names:
+#   print(str(n) + " => ID " + str(face_names[n]))
+#
+# # store names and ids in a pickle file
+# with open("face_names.pickle", "wb") as f:
+#   pickle.dump(face_names, f)
 
 
-print('\n')
-print('Training Eigenface recognizer......')
-eigen_classifier = cv2.face.EigenFaceRecognizer_create()
-eigen_classifier.train(faces, ids)
-eigen_classifier.write('eigen_classifier.yml')
-print('... Completed!\n')
+# print('\n')
+# print('Training Eigenface recognizer......')
+# eigen_classifier = cv2.face.EigenFaceRecognizer_create()
+# eigen_classifier.train(faces, ids)
+# eigen_classifier.write('eigen_classifier.yml')
+# print('... Completed!\n')
+#
+# print('Training Fisherface recognizer......')
+# fisher_classifier = cv2.face.FisherFaceRecognizer_create()
+# fisher_classifier.train(faces, ids)
+# fisher_classifier.write('fisher_classifier.yml')
+# print('... Completed!\n')
 
-print('Training Fisherface recognizer......')
-fisher_classifier = cv2.face.FisherFaceRecognizer_create()
-fisher_classifier.train(faces, ids)
-fisher_classifier.write('fisher_classifier.yml')
-print('... Completed!\n')
-
-print('Training LBPH recognizer......')
-lbph_classifier = cv2.face.LBPHFaceRecognizer_create()
-lbph_classifier.train(faces, ids)
-lbph_classifier.write('lbph_classifier.yml')
-print('... Completed!\n')
+# print('Training LBPH recognizer......')
+# lbph_classifier = cv2.face.LBPHFaceRecognizer_create()
+# lbph_classifier.train(faces, ids)
+# lbph_classifier.write('lbph_classifier.yml')
+# print('... Completed!\n')

@@ -6,13 +6,13 @@ import re
 import face_recognition
 from helper_functions import resize_video
 
-pickle_name = "face_encodings_custom.pickle"
-
-largura_maxima = 800
-
-dados_codificados = pickle.loads(open(pickle_name, "rb").read())
-lista_encodificada = dados_codificados["encodings"]
-lista_de_nomes = dados_codificados["names"]
+# pickle_name = "face_encodings_custom.pickle"
+#
+# largura_maxima = 800
+#
+# dados_codificados = pickle.loads(open(pickle_name, "rb").read())
+# lista_encodificada = dados_codificados["encodings"]
+# lista_de_nomes = dados_codificados["names"]
 
 def reconhecer_faces(imagem, lista_encodificada, lista_de_nomes, redimensionar=0.25, tolerancia=1.0):
 

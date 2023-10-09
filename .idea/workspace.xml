@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="59a9ec2e-9e18-4e3e-8d90-1af918a1ae5a" name="Changes" comment="dataset de imagens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_capture_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_capture_webcam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/face_names.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/interface/face_names.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/lbph_classifier.yml" beforeDir="false" afterPath="$PROJECT_DIR$/interface/lbph_classifier.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkinter_service/camera_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_service/camera_output.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkinter_service/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_service/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkinter_service/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_service/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkinter_service/panels.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_service/panels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_recognizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_recognizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/reconhecimento_facial.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/reconhecimento_facial.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion\stash" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="AplicarFiltroImagens" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="detection_recogntion" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,19 +86,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="datacollect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="detection_recogntion" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\gusta\PycharmProjects\recognition-cam\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testing-with-unknow" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing-with-unknow/datacollect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,19 +193,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.main (1)" />
       <item itemvalue="Python.AplicarFiltroImagens" />
-      <item itemvalue="Python.datacollect" />
       <item itemvalue="Python.recognition_webcam" />
       <item itemvalue="Python.train_recognizers" />
       <item itemvalue="Python.trainingdemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.AplicarFiltroImagens" />
         <item itemvalue="Python.recognition_webcam" />
         <item itemvalue="Python.train_recognizers" />
         <item itemvalue="Python.trainingdemo" />
-        <item itemvalue="Python.datacollect" />
       </list>
     </recent_temporary>
   </component>

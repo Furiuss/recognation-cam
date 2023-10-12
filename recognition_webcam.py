@@ -7,7 +7,7 @@ import sys
 from helper_functions import resize_video
 
 recognizer = "lbph"
-training_data = "../interface/lbph_classifier.yml"
+training_data = "lbph_classifier.yml"
 threshold = 100
 
 max_width = 800
@@ -57,7 +57,6 @@ def recognize_faces(network,  orig_frame, face_names, threshold, conf_min=0.7):
             cv2.rectangle(frame, (start_x, start_y), (end_x, end_y), (0, 255, 0), 2)
 
             pred_name = face_names[prediction] if conf <= threshold else "Not identified"
-
             if (conf > 100):
                 text = "Nao identificado"
             else:

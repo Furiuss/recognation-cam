@@ -1,9 +1,7 @@
 import customtkinter
 from firebase_services.firebase_config import ForagidosCollections
-import firebase_services.firestore as firestore
-from tkinter_webcam import webcam
+import firestore as firestore
 from PIL import Image
-import cv2
 import os
 
 customtkinter.set_appearance_mode("dark")

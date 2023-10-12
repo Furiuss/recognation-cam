@@ -50,7 +50,7 @@ from firebase_admin import credentials, db, storage
 #      appsettings= json.load(json_file)
 
 # Firebase-APIKey File
-API_KEY_PATH = os.path.join(os.path.dirname(__file__), '/service_account.json')  # Add your API file path
+API_KEY_PATH = os.path.join(os.path.dirname(__file__), '../service_account.json')  # Add your API file path
 
 # Initialize the default firebase app
 certificate = credentials.Certificate(API_KEY_PATH)
@@ -97,7 +97,7 @@ class ForagidosCollections():
     def adicionarForagido(self, content):
         """ To push/add new todo items into collection """
 
-        path = os.path.join(os.path.dirname(__file__), '/User.gustavo.286.jpg')
+        path = os.path.join(os.path.dirname(__file__), '../User.gustavo.286.jpg')
         blob = self.bucket.blob(path)
         blob.upload_from_filename(path)
         content['imagens'] = self.getUrl()
@@ -125,7 +125,7 @@ class ForagidosCollections():
     def getUrl(self):
         imagem_Ref = storage.bucket()\
                             .get_blob(os.path.join(os.path.dirname(__file__),
-                                                   '/User.gustavo.286.jpg'))
+                                                   '../User.gustavo.286.jpg'))
         imagem_Ref.make_public()
         url = imagem_Ref.public_url
         return url

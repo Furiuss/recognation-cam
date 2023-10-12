@@ -5,6 +5,8 @@ from train_recognizers import *
 import customtkinter as ctk
 from recognition_webcam import *
 from face_capture_webcam import *
+import sys
+import os
 
 class CustomTkinterApp:
     def __init__(self, root):
@@ -144,7 +146,6 @@ class CustomTkinterApp:
             max_width = 800
 
             if frame is not None:
-                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 if max_width is not None:
                     video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
                     frame = cv2.resize(frame, (video_width, video_height))
@@ -193,7 +194,7 @@ class CustomTkinterApp:
 
             if frame is not None:
 
-                    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                    # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                     if max_width is not None:
                         video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
                         frame = cv2.resize(frame, (video_width, video_height))
@@ -226,7 +227,6 @@ class CustomTkinterApp:
 
 
     def display_frame(self, frame):
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         photo = tk.PhotoImage(data=cv2.imencode(".png", frame)[1].tobytes())
 
         self.canvas.create_image(0, 0, image=photo, anchor=tk.NW)
@@ -239,6 +239,12 @@ class CustomTkinterApp:
 
         self.botao_capturarRosto.configure(state="normal")
         self.botao_parar.configure(state="disabled")
+        self.reiniciar_aplicacao()
+
+    def reiniciar_aplicacao(self):
+        python_executable = sys.executable
+        script = os.path.abspath(__file__)
+        os.execl(python_executable, python_executable, script)
 
 
 class Frame(ctk.CTkFrame):

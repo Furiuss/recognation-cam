@@ -4,7 +4,6 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 from PIL import Image, ImageFilter
 import matplotlib.pyplot as plt
-'6 '
 
 def removerRuido(imagem):
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))

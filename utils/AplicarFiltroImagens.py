@@ -4,7 +4,7 @@ import ProcessamentoImagem
 from PIL import Image,  ImageFilter
 import numpy as np
 
-pasta_imagens = "../dataset/andre"
+pasta_imagens = "../interface/dataset/andrezin"
 
 if not os.path.exists(pasta_imagens):
     print("A pasta especificada não existe.")
@@ -20,13 +20,13 @@ else:
 
         # Aplicar os filtro necessários:
 
-        imagem_processada = ProcessamentoImagem.redimensionar(imagem)
+        # imagem_processada = ProcessamentoImagem.redimensionar(imagem)
 
-        imagem_processada = ProcessamentoImagem.converterParaEscalaDeCinza(imagem_processada)
+        imagem_processada = ProcessamentoImagem.converterParaEscalaDeCinza(imagem)
 
         imagem_processada = ProcessamentoImagem.removerRuido(imagem_processada)
 
-        imagem_processada = ProcessamentoImagem.equalizacaoHistograma(imagem_processada)
+        # imagem_processada = ProcessamentoImagem.equalizacaoHistograma(imagem_processada)
 
         imagem_processada = ProcessamentoImagem.normalizar_intensidade(imagem_processada)
 

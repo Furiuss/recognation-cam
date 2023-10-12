@@ -7,197 +7,111 @@
     <list default="true" id="59a9ec2e-9e18-4e3e-8d90-1af918a1ae5a" name="Changes" comment="dataset de imagens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProcessamentoImagem.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessamentoImagem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.105.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.109.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.110.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.111.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.112.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.113.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.114.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.115.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.116.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.117.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.118.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.119.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.121.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.122.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.123.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.124.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.125.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.126.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.127.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.129.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.130.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.131.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.132.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.135.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.137.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.138.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.140.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.141.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.143.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.144.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.146.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.147.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.148.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.149.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.151.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.152.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.154.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.155.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.156.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.157.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.159.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.161.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.162.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.163.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.164.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.165.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.166.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.167.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.168.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.170.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.171.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.172.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.173.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.174.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.175.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.176.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.177.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.178.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.179.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.181.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.182.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.183.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.184.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.185.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.34.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.36.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.38.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.42.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.45.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.46.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.47.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.48.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.49.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.51.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.52.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.53.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.55.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.56.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.57.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.58.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.59.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.60.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.61.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.62.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.63.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.65.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.66.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.67.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.68.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.69.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.71.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.72.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.73.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.74.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.75.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.77.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.78.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.79.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.81.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.82.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.83.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.84.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.85.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.86.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.87.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.88.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.89.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.91.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.92.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.93.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.94.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.95.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.96.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.97.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.98.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andre.20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biden.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biden.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eigen_classifier.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisher_classifier.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.82.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.82.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.84.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.84.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.85.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.86.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.86.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.87.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.87.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.88.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.88.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.89.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.89.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dataset/andre/andre.90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/firebase_services/andre/andre.90.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/face_names.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/interface/face_names.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/lbph_classifier.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbph_classifier.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obama.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outro-teste.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/recognition_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition_webcam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treinamento.py" beforeDir="false" afterPath="$PROJECT_DIR$/treinamento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-gpt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing-with-unknow/AplicarFiltroImagens.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing-with-unknow/AplicarFiltroImagens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_recognizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_recognizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/AplicarFiltroImagens.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/AplicarFiltroImagens.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,9 +142,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;refatorando-codigo&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ajustando-tudo&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/hugon/OneDrive/Documentos/detection_recogntion/interface&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -242,11 +156,11 @@
       <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion\firebase_services" />
       <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion\interface" />
       <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion" />
       <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion\dataset" />
       <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion\dataset_full" />
-      <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion\detecctor-movimento" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main (1)">
@@ -476,6 +390,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="dataset de imagens" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ProcessamentoImagem.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="processed_frame" />

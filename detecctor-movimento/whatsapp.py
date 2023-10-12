@@ -15,5 +15,5 @@ def enviar_mensagem():
     message = client.messages.create(body='⚠️ALERTA CRIMINOSO!',
                                      from_=numero_twilio,
                                      to=meu_numero)
-    time.sleep(60)
+    # time.sleep(60)
     print(message.sid)

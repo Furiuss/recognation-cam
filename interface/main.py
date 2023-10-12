@@ -149,10 +149,11 @@ class CustomTkinterApp:
                     video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
                     frame = cv2.resize(frame, (video_width, video_height))
 
-                processed_frame = recognize_faces(network, face_classifier, frame, face_names, threshold)
+                processed_frame = recognize_faces(network,  frame, face_names, threshold)
                 self.display_frame(processed_frame)
                 self.root.after(1, self.reconhecer)
-        except:
+        except Exception as e:
+            print(e)
             messagebox.showerror("Erro", "Algo deu errado chefe 🤷‍♂️")
             self.pararWebCam()
 

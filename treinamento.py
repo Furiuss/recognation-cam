@@ -44,19 +44,6 @@ for nome in nome_faces:
 with open("face_names.pickle", "wb") as f:
   pickle.dump(nome_faces, f)
 
-print('\n')
-print('Treinamento Eigenface iniciado......')
-eigen_classifier = cv2.face.EigenFaceRecognizer_create()
-eigen_classifier.train(faces, ids)
-eigen_classifier.write('eigen_classifier.yml')
-print('...... Completado!\n')
-
-print('Treinamento Fisherface iniciado......')
-fisher_classifier = cv2.face.FisherFaceRecognizer_create()
-fisher_classifier.train(faces, ids)
-fisher_classifier.write('fisher_classifier.yml')
-print('...... Completado!\n')
-
 print('Treinamento LBPH iniciado......')
 lbph_classifier = cv2.face.LBPHFaceRecognizer_create()
 lbph_classifier.train(faces, ids)

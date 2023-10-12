@@ -4,7 +4,7 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 from PIL import Image, ImageFilter
 import matplotlib.pyplot as plt
-
+'6 '
 
 def removerRuido(imagem):
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
@@ -31,7 +31,7 @@ def detectorDeBordasCanny(imagem):
         np.hstack([imagem, suave]),
         np.hstack([canny1, canny2])
     ])
-    return canny1
+    return resultado
 
 def detectorDeBordasSobel(imagem):
     sobelX = cv2.Sobel(imagem, cv2.CV_64F, 1, 0)
@@ -43,7 +43,7 @@ def detectorDeBordasSobel(imagem):
         np.hstack([imagem, sobelX]),
         np.hstack([sobelY, sobel])
     ])
-    return sobel
+    return resultado
 
 def reduzirDimensao_PCA(imagem, var_exp=0.99):
     pca = PCA(var_exp)  # variância explicada de 0.99

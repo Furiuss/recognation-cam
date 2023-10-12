@@ -9,8 +9,8 @@ from helper_functions import resize_video
 
 # Face recognizer options ->  eigenfaces  |  fisherfaces  |  lbph (recommended for video)
 recognizer = "lbph"
-training_data = "lbph_classifier.yml"  # the path to the .yml file
-threshold = 10e5   # leave 10e5 if you don't want to specify a threshold. Otherwise, specify the value for threshold
+training_data = "../interface/lbph_classifier.yml"  # the path to the .yml file
+threshold = 100   # leave 10e5 if you don't want to specify a threshold. Otherwise, specify the value for threshold
                    # 10e5 = 1000000  (a large number so it will always return a prediction)
 
 max_width = 800           # leave None if you don't want to resize and want to keep the original size of the video stream frame
@@ -30,7 +30,6 @@ def load_recognizer(option, training_data):
     face_classifier.read(training_data) #.yml
     return face_classifier
 
-face_classifier = load_recognizer(recognizer, training_data)
 
 # load names from pickle file
 face_names = {}
@@ -41,7 +40,9 @@ with open("face_names.pickle", "rb") as f:
 
 
 # Return the detected face using SSD
-def recognize_faces(network, face_classifier, orig_frame, face_names, threshold, conf_min=0.7):
+def recognize_faces(network,  orig_frame, face_names, threshold, conf_min=0.7):
+    face_classifier = load_recognizer(recognizer, training_data)
+
     frame = orig_frame.copy()  # to keep the original frame intact (just if we want to save the full image
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     (h, w) = frame.shape[:2]
@@ -69,8 +70,11 @@ def recognize_faces(network, face_classifier, orig_frame, face_names, threshold,
             cv2.rectangle(frame, (start_x, start_y), (end_x, end_y), (0, 255, 0), 2)
 
             pred_name = face_names[prediction] if conf <= threshold else "Not identified"
-
-            text = "{} -> {:.4f}".format(pred_name, conf)
+            text = ""
+            if (conf > 100):
+                text = "Nao identificado"
+            else:
+                text = "{} -> {:.4f}".format(pred_name, conf)
             cv2.putText(frame, text, (start_x, start_y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
             # face = cv2.cvtColor(face_roi, cv2.COLOR_BGR2GRAY)
     return frame

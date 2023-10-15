@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
 from train_recognizers import *
-from firestore import adicionarImagensDeForagido
+# from firebase_services.firebase_config import ForagidosCollections
+# import firestore as firestore
 import customtkinter as ctk
 from recognition_webcam import *
 from face_capture_webcam import *
@@ -15,6 +16,7 @@ class CustomTkinterApp:
 
         self.sample = 0
         self.starting_sample_number = 0
+        self.max_width = 800
 
         # Crie um widget Notebook para as abas
         # self.notebook = ttk.Notebook(root)
@@ -135,7 +137,7 @@ class CustomTkinterApp:
         lbph_classifier.write('lbph_classifier.yml')
         print('... Completed!\n')
         print("treinei")
-        # self.reiniciar_aplicacao()
+        self.reiniciar_aplicacao()
 
     def configurarReconhecimento(self):
         self.video_capture = cv2.VideoCapture(0)
@@ -144,16 +146,13 @@ class CustomTkinterApp:
     def reconhecer(self):
         try:
             _, frame = self.video_capture.read()
-            max_width = 800
 
-            if frame is not None:
-                if max_width is not None:
-                    video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
-                    frame = cv2.resize(frame, (video_width, video_height))
+            video_width, video_height = resize_video(frame.shape[1], frame.shape[0], self.max_width)
+            frame = cv2.resize(frame, (video_width, video_height))
 
-                processed_frame = recognize_faces(network,  frame, face_names, threshold)
-                self.display_frame(processed_frame)
-                self.root.after(1, self.reconhecer)
+            processed_frame = recognize_faces(network,  frame, face_names, threshold)
+            self.display_frame(processed_frame)
+            self.root.after(1, self.reconhecer)
         except Exception as e:
             print(e)
             messagebox.showerror("Erro", "Algo deu errado chefe 🤷‍♂️")
@@ -186,6 +185,11 @@ class CustomTkinterApp:
                     self.display_frame(processed_frame)
                     self.root.after(1, self.mostrarWebCam)
             else:
+                # foragido = ForagidosCollections()
+                # foragido.adicionarForagido({
+                #
+                # })
+                # firestore.create()
                 messagebox.showinfo("Ok", "Dados Cadastrados com Sucesso")
                 self.entrada_nome.delete(0, 'end')
                 self.entrada_cpf.delete(0, 'end')

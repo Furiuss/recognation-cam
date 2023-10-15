@@ -70,6 +70,14 @@ def pegarTodasAsImagens():
         arr_links_imagens.append(imagem.public_url)
     return arr_links_imagens
 
+def pegar_print(nome):
+    folder_ref = storage.child("screenshots_suspeitos")
+    for imagem in folder_ref.list_files():
+        if imagem.name == nome:
+            imagem.make_public()
+            return imagem.public_url
+    return "fudeu"
+
 # def adicionar
 
 # def pegarCollection():
@@ -108,8 +116,8 @@ def pegarImagensForagido(id):
     imagens_foragido = foragido['imagens']
     return imagens_foragido
 
-def adicionarPrintSuspeito():
-    storage.child("screenshots_suspeitos/70629522147").put("User.gustavo.286.jpg")
+def adicionarPrintSuspeito(nome, nome_imagem):
+    storage.child(nome).put(nome_imagem)
 
 def adicionarImagensDeForagido():
     path_train = "dataset/"
@@ -143,3 +151,4 @@ def adicionarImagensDeForagido():
 # foragido.adicionarId()
 # create(foragido)
 # print(pegarForagidoPeloId(foragido.id))
+# print(pegarTodasAsImagens())

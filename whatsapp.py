@@ -11,9 +11,10 @@ numero_twilio = os.getenv("NUMERO_TWILIO")
 
 meu_numero = os.getenv("MEU_NUMERO")
 
-def enviar_mensagem():
+def enviar_mensagem(link):
     message = client.messages.create(body='⚠️ALERTA CRIMINOSO!',
                                      from_=numero_twilio,
+                                     media_url=link,
                                      to=meu_numero)
     # time.sleep(60)
     print(message.sid)

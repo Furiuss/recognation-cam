@@ -2,37 +2,30 @@ import cv2
 import numpy as np
 import os
 import pickle
+import asyncio
 import sys
+import firestore
+
+import whatsapp
+from whatsapp import enviar_mensagem
 
 from helper_functions import resize_video
 
-recognizer = "lbph"
-training_data = "lbph_classifier.yml"
-threshold = 100
+
+threshold = 98
 
 max_width = 800
-
-def load_recognizer(option, training_data):
-    if option == "eigenfaces":
-        face_classifier = cv2.face.EigenFaceRecognizer_create()
-    elif option == "fisherfaces":
-        face_classifier = cv2.face.FisherFaceRecognizer_create()
-    elif option == "lbph":
-        face_classifier = cv2.face.LBPHFaceRecognizer_create()
-    else:
-        print("The algorithms available are: Eigenfaces, Fisherfaces and LBPH")
-        sys.exit()
-
-    face_classifier.read(training_data) #.yml
-    return face_classifier
 
 face_names = {}
 with open("face_names.pickle", "rb") as f:
     original_labels = pickle.load(f)
     face_names = {v: k for k, v in original_labels.items()}
 
+array_predicoes = []
+
 def recognize_faces(network,  orig_frame, face_names, threshold, conf_min=0.7):
-    face_classifier = load_recognizer(recognizer, training_data)
+    face_classifier = cv2.face.LBPHFaceRecognizer_create()
+    face_classifier.read("lbph_classifier.yml")
 
     frame = orig_frame.copy()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -57,13 +50,26 @@ def recognize_faces(network,  orig_frame, face_names, threshold, conf_min=0.7):
             cv2.rectangle(frame, (start_x, start_y), (end_x, end_y), (0, 255, 0), 2)
 
             pred_name = face_names[prediction] if conf <= threshold else "Not identified"
+
             if (conf > 100):
                 text = "Nao identificado"
             else:
+                # enviar mesagem caso o cara nao tenha sido reconhecido
+                if prediction not in array_predicoes:
+                    mandar_mensagem(orig_frame, face_names[prediction])
+                    array_predicoes.append(prediction)
+
                 text = "{} -> {:.4f}".format(pred_name, conf)
+
             cv2.putText(frame, text, (start_x, start_y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
             # face = cv2.cvtColor(face_roi, cv2.COLOR_BGR2GRAY)
     return frame
 
+def mandar_mensagem(frame, nome):
+    nome_arquivo = f"print-{nome}.jpg"
+    cv2.imwrite(nome_arquivo, frame)
+    firestore.adicionarPrintSuspeito(nome, nome_arquivo)
+    link_imagem = firestore.pegar_print(nome)
+    whatsapp.enviar_mensagem(link_imagem)
 
 network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")

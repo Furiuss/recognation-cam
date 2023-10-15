@@ -161,3 +161,6 @@ class ForagidosCollections():
             raise Exception("Item doesn't exists")
         itemMatchedNode.delete()
         return True
+
+foragido = ForagidosCollections()
+print(foragido.getUrl())

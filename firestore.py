@@ -83,8 +83,11 @@ def pegar_print(nome):
 # def pegarCollection():
 #     return collection_ref.get()
 
-def pegarForagidoPeloId(id):
-    snapshot = collection_ref.document(id).get()
+def pegarForagidoPeloCpf(cpf):
+    document = collection_ref.where('cpf', '==', cpf).get()
+    snapshot = document[0]
+    # snapshot = collection_ref.document(document[0].id).get()
+
     if snapshot == None:
         return False
 
@@ -100,21 +103,21 @@ def pegarForagidoPeloId(id):
     # else:
     #     return False
 
-def armazenar_imagens_foragido(id):
-    nome_pasta = id
-    array_imagens_links = pegarImagensForagido(id)
-
-    if not os.path.exists(nome_pasta):
-        os.makedirs(nome_pasta)
-
-    for nome_arquivo in array_imagens_links:
-        caminho_arquivo = os.path.join(nome_pasta, nome_arquivo)
-        storage.child(caminho_arquivo)
-
-def pegarImagensForagido(id):
-    foragido = pegarForagidoPeloId(id)
-    imagens_foragido = foragido['imagens']
-    return imagens_foragido
+# def armazenar_imagens_foragido(id):
+#     nome_pasta = id
+#     array_imagens_links = pegarImagensForagido(id)
+#
+#     if not os.path.exists(nome_pasta):
+#         os.makedirs(nome_pasta)
+#
+#     for nome_arquivo in array_imagens_links:
+#         caminho_arquivo = os.path.join(nome_pasta, nome_arquivo)
+#         storage.child(caminho_arquivo)
+#
+# def pegarImagensForagido(id):
+#     foragido = pegarForagidoPeloId(id)
+#     imagens_foragido = foragido['imagens']
+#     return imagens_foragido
 
 def adicionarPrintSuspeito(nome, nome_imagem):
     storage.child(nome).put(nome_imagem)

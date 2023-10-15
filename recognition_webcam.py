@@ -48,8 +48,8 @@ def recognize_faces(network,  orig_frame, face_names, threshold, conf_min=0.7):
             prediction, conf = face_classifier.predict(face_roi)
 
             cv2.rectangle(frame, (start_x, start_y), (end_x, end_y), (0, 255, 0), 2)
-
-            pred_name = face_names[prediction] if conf <= threshold else "Not identified"
+            nome_formatado = face_names[prediction].split("-")[0]
+            pred_name = nome_formatado if conf <= threshold else "Not identified"
 
             if (conf > 100):
                 text = "Nao identificado"
@@ -70,6 +70,11 @@ def mandar_mensagem(frame, nome):
     cv2.imwrite(nome_arquivo, frame)
     firestore.adicionarPrintSuspeito(nome, nome_arquivo)
     link_imagem = firestore.pegar_print(nome)
-    whatsapp.enviar_mensagem(link_imagem)
+    cpf_foragido = nome.split("-")[1]
+    foragido = pegar_foragido(cpf_foragido)
+    whatsapp.enviar_mensagem(foragido, link_imagem)
+
+def pegar_foragido(cpf):
+    return firestore.pegarForagidoPeloCpf(cpf)
 
 network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")

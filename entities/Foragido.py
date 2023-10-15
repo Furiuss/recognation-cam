@@ -10,6 +10,7 @@ class Foragido:
         self.created_at = created_at
         self.updated_at = updated_at
         self.imagens = []
+        self.adicionarId()
 
     def adicionarImagens(self, arrayImagens):
         for imagem in arrayImagens:

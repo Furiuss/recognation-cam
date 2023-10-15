@@ -18,7 +18,6 @@ def get_image_data(path_train):
   print("Loading faces from training set...")
   for subdir in subdirs:
     name = os.path.split(subdir)[1]
-
     images_list = [os.path.join(subdir, f) for f in os.listdir(subdir)]
     for path in images_list:
       image = Image.open(path).convert('L')
@@ -35,3 +34,5 @@ def get_image_data(path_train):
       id += 1
 
   return np.array(ids), faces, face_names
+
+# get_image_data("dataset/")

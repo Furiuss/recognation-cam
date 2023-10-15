@@ -11,8 +11,12 @@ numero_twilio = os.getenv("NUMERO_TWILIO")
 
 meu_numero = os.getenv("MEU_NUMERO")
 
-def enviar_mensagem(link):
-    message = client.messages.create(body='⚠️ALERTA CRIMINOSO!',
+def enviar_mensagem(foragido, link):
+    body = f"nome: {foragido['nome']}\n" \
+           f"cpf: {foragido['cpf']}\n" \
+           f"data_nascimento: {foragido['data_nascimento']}"
+
+    message = client.messages.create(body=body,
                                      from_=numero_twilio,
                                      media_url=link,
                                      to=meu_numero)

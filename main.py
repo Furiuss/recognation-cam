@@ -2,7 +2,9 @@ import tkinter as tk
 from tkinter import messagebox
 from train_recognizers import *
 # from firebase_services.firebase_config import ForagidosCollections
-# import firestore as firestore
+import firestore as firestore
+import datetime
+from entities.Foragido import Foragido
 import customtkinter as ctk
 from recognition_webcam import *
 from face_capture_webcam import *
@@ -115,7 +117,7 @@ class CustomTkinterApp:
         # adicionarImagensDeForagido()
         self.botao_capturarRosto.configure(state="disabled")
         self.botao_parar.configure(state="normal")
-        self.person_name = self.entrada_nome.get()
+        self.person_name = self.entrada_nome.get() + "-" + self.entrada_cpf.get()
         self.final_path = os.path.sep.join([self.folder_faces, self.person_name])
         create_folders(self.final_path)
         self.mostrarWebCam()
@@ -185,11 +187,16 @@ class CustomTkinterApp:
                     self.display_frame(processed_frame)
                     self.root.after(1, self.mostrarWebCam)
             else:
-                # foragido = ForagidosCollections()
-                # foragido.adicionarForagido({
-                #
-                # })
-                # firestore.create()
+                foragido = Foragido(
+                    nome=self.entrada_nome.get(),
+                    data_nascimento=self.entrada_dataNascimento.get(),
+                    cpf=self.entrada_cpf.get(),
+                    created_at=datetime.datetime.now(),
+                    updated_at=datetime.datetime.now(),
+                    eh_foragido=True
+                )
+                firestore.create(foragido)
+
                 messagebox.showinfo("Ok", "Dados Cadastrados com Sucesso")
                 self.entrada_nome.delete(0, 'end')
                 self.entrada_cpf.delete(0, 'end')

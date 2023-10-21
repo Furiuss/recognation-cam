@@ -5,55 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59a9ec2e-9e18-4e3e-8d90-1af918a1ae5a" name="Changes" comment="dataset de imagens">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.34.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.36.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.38.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/lucas/lucas.9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/Foragido.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Foragido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/face_names.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/face_names.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firestore.py" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lbph_classifier.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lbph_classifier.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/print-lucas.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/print-lucas.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/print-andre-70629522146.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/print-andre-70629522146.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recognition_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition_webcam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_recognizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_recognizers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

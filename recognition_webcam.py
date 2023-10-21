@@ -5,6 +5,8 @@ import pickle
 import asyncio
 import sys
 import firestore
+import threading
+
 
 import whatsapp
 from whatsapp import enviar_mensagem
@@ -23,7 +25,7 @@ with open("face_names.pickle", "rb") as f:
 
 array_predicoes = []
 
-def recognize_faces(network,  orig_frame, face_names, threshold, conf_min=0.7):
+def recognize_faces(network,  orig_frame, face_names, conf_min=0.7):
     face_classifier = cv2.face.LBPHFaceRecognizer_create()
     face_classifier.read("lbph_classifier.yml")
 
@@ -48,17 +50,17 @@ def recognize_faces(network,  orig_frame, face_names, threshold, conf_min=0.7):
             prediction, conf = face_classifier.predict(face_roi)
 
             cv2.rectangle(frame, (start_x, start_y), (end_x, end_y), (0, 255, 0), 2)
-            nome_formatado = face_names[prediction].split("-")[0]
-            pred_name = nome_formatado if conf <= threshold else "Not identified"
 
             if (conf > 100):
                 text = "Nao identificado"
             else:
                 # enviar mesagem caso o cara nao tenha sido reconhecido
                 if prediction not in array_predicoes:
-                    mandar_mensagem(orig_frame, face_names[prediction])
+                    mandar_mensagem_thread(orig_frame, face_names[prediction])
                     array_predicoes.append(prediction)
 
+                nome_formatado = face_names[prediction].split("-")[0]
+                pred_name = nome_formatado
                 text = "{} -> {:.4f}".format(pred_name, conf)
 
             cv2.putText(frame, text, (start_x, start_y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
@@ -73,6 +75,10 @@ def mandar_mensagem(frame, nome):
     cpf_foragido = nome.split("-")[1]
     foragido = pegar_foragido(cpf_foragido)
     whatsapp.enviar_mensagem(foragido, link_imagem)
+
+def mandar_mensagem_thread(frame, nome):
+    thread = threading.Thread(target=mandar_mensagem, args=(frame, nome))
+    thread.start()
 
 def pegar_foragido(cpf):
     return firestore.pegarForagidoPeloCpf(cpf)

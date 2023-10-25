@@ -139,6 +139,7 @@ class CustomTkinterApp:
         lbph_classifier.write('lbph_classifier.yml')
         print('... Completed!\n')
         print("treinei")
+        messagebox.showwarning("Aviso", "Para reconhecer é necessário reiniciar a aplicação")
         self.reiniciar_aplicacao()
 
     def configurarReconhecimento(self):
@@ -152,7 +153,7 @@ class CustomTkinterApp:
             video_width, video_height = resize_video(frame.shape[1], frame.shape[0], self.max_width)
             frame = cv2.resize(frame, (video_width, video_height))
 
-            processed_frame = recognize_faces(network,  frame, face_names, threshold)
+            processed_frame = recognize_faces(network,  frame, face_names)
             self.display_frame(processed_frame)
             self.root.after(1, self.reconhecer)
         except Exception as e:

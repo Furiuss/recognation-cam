@@ -51,7 +51,6 @@ def recognize_faces(network,  orig_frame, face_names, conf_min=0.7):
             if (conf > threshold):
                 text = "Nao identificado"
             else:
-                print(conf)
                 # enviar mesagem caso o cara nao tenha sido reconhecido
                 if prediction not in array_predicoes:
                     mandar_mensagem_thread(orig_frame, face_names[prediction])

@@ -208,12 +208,8 @@ class CustomTkinterApp:
                 self.entrada_cpf.delete(0, 'end')
                 self.entrada_dataNascimento.delete(0, 'end')
         except cv2.error:
-            messagebox.showerror("Erro", "Mantenha o rosto detectável")
-            self.pararWebCam()
-        except:
-            messagebox.showerror("Erro", "Algo deu errado chefe 🤷‍♂️")
-            self.pararWebCam()
-
+            messagebox.showwarning("Aviso", "Por favor, mantenha o rosto mais próximo à câmera e mova-o lentamente. 📷")
+            self.capturarRosto()
 
     def display_frame(self, frame):
         photo = tk.PhotoImage(data=cv2.imencode(".png", frame)[1].tobytes())

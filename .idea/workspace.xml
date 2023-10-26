@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59a9ec2e-9e18-4e3e-8d90-1af918a1ae5a" name="Changes" comment="dataset de imagens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biden.avif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.10.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.11.jpg" beforeDir="false" />
@@ -58,17 +59,21 @@
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.54.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.55.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.56.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.57.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.58.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.59.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.6.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.7.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.8.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/andre-70629522146/andre-70629522146.9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/face_names.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/face_names.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbph_classifier.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lbph_classifier.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firestore.py" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbph_classifier.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/print-andre-70629522146.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/print-andre-70629522146.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/print-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/print-Gustavo-777777777.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/print-andre-70629522146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/print-gabriel-1212121212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/print-joao-70629522146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/print-lucas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/print-luiza-24667056215.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/recognition_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition_webcam.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -323,11 +328,6 @@
           <url>file://$PROJECT_DIR$/train_recognizers.py</url>
           <line>10</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/firestore.py</url>
-          <line>87</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -76,7 +76,12 @@ def pegar_print(nome):
         if imagem.name == nome:
             imagem.make_public()
             return imagem.public_url
-    return "fudeu"
+    return "error"
+
+def apagar_prints_existentes():
+    folder_ref = storage.child("screenshots_suspeitos")
+    for imagem in folder_ref.list_files():
+        storage.delete(imagem.name)
 
 # def adicionar
 

@@ -1,5 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
+
+import cv2.face
+
 from train_recognizers import *
 # from firebase_services.firebase_config import ForagidosCollections
 import firestore as firestore
@@ -65,13 +68,14 @@ class CustomTkinterApp:
         self.resposta_reconhecer = ctk.CTkButton(self.tab_reconhecimento, text="Reconhecer", command=self.configurarReconhecimento)
         self.resposta_reconhecer.pack(side="left", ipadx=75)
 
-        self.resposta_reconhecer = ctk.CTkButton(self.tab_reconhecimento, text = 'x',
+        self.botao_parar_rec = ctk.CTkButton(self.tab_reconhecimento, text = '',
                          text_color="white",
+                         fg_color='transparent',
                          command=self.pararWebCam,
-                         fg_color= 'red',
                          width=40, height=40,
-                         corner_radius=0)
-        self.resposta_reconhecer.place(relx = 0.99, rely = 0.01, anchor = 'ne')
+                         corner_radius=0,
+                         state="disabled")
+        self.botao_parar_rec.place(relx = 0.99, rely =0.80, anchor = 'ne')
         # self.resposta_id = ctk.CTkEntry(self.tab_reconhecimento, placeholder_text="ID")
         # self.resposta_id.pack(pady=10)
         #
@@ -133,18 +137,19 @@ class CustomTkinterApp:
         with open("face_names.pickle", "wb") as f:
             pickle.dump(face_names, f)
 
-        print('Training LBPH recognizer......')
-        lbph_classifier = cv2.face.LBPHFaceRecognizer_create()
+        # os.remove("lbph_classifier.yml")
+
+        lbph_classifier = cv2.face.LBPHFaceRecognizer().create()
         lbph_classifier.train(faces, ids)
         lbph_classifier.write('lbph_classifier.yml')
-        print('... Completed!\n')
-        print("treinei")
         messagebox.showwarning("Aviso", "Para reconhecer é necessário reiniciar a aplicação")
-        self.reiniciar_aplicacao()
+        cv2.destroyAllWindows()
+        # self.reiniciar_aplicacao()
 
     def configurarReconhecimento(self):
         self.video_capture = cv2.VideoCapture(0)
         self.reconhecer()
+        self.aplicar_configuracoes_botoes()
 
     def reconhecer(self):
         try:
@@ -158,7 +163,7 @@ class CustomTkinterApp:
             self.root.after(1, self.reconhecer)
         except Exception as e:
             print(e)
-            messagebox.showerror("Erro", "Algo deu errado chefe 🤷‍♂️")
+            self.resetar_configuracoes_botoes()
             self.pararWebCam()
 
     def mostrarWebCam(self):
@@ -204,7 +209,7 @@ class CustomTkinterApp:
                 self.entrada_dataNascimento.delete(0, 'end')
         except cv2.error:
             messagebox.showerror("Erro", "Mantenha o rosto detectável")
-            self.pararWebCam(True)
+            self.pararWebCam()
         except:
             messagebox.showerror("Erro", "Algo deu errado chefe 🤷‍♂️")
             self.pararWebCam()
@@ -216,7 +221,7 @@ class CustomTkinterApp:
         self.canvas.create_image(0, 0, image=photo, anchor=tk.NW)
         self.canvas.image = photo
 
-    def pararWebCam(self, reset_app=False):
+    def pararWebCam(self):
         self.video_capture.release()
         cv2.destroyAllWindows()
         self.canvas.image = None
@@ -229,6 +234,15 @@ class CustomTkinterApp:
         script = os.path.abspath(__file__)
         os.execl(python_executable, python_executable, script)
 
+    def aplicar_configuracoes_botoes(self):
+        self.botao_parar_rec.configure(state="normal", text="x", fg_color="red")
+        self.resposta_reconhecer.configure(state="disabled")
+        self.resposta_treinar.configure(state="disabled")
+
+    def resetar_configuracoes_botoes(self):
+        self.botao_parar_rec.configure(state="disabled", text="", fg_color='transparent')
+        self.resposta_reconhecer.configure(state="normal")
+        self.resposta_treinar.configure(state="normal")
 
 class Frame(ctk.CTkFrame):
     def __init__(self, parent):

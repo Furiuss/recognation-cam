@@ -1,15 +1,10 @@
 import cv2
 import numpy as np
-import os
 import pickle
 import firestore
 import threading
 
 import whatsapp
-from whatsapp import enviar_mensagem
-
-from helper_functions import resize_video
-
 
 threshold = 96
 
@@ -51,7 +46,6 @@ def recognize_faces(network,  orig_frame, face_names, conf_min=0.7):
             if (conf > threshold):
                 text = "Nao identificado"
             else:
-                # enviar mesagem caso o cara nao tenha sido reconhecido
                 if prediction not in array_predicoes:
                     mandar_mensagem_thread(orig_frame, face_names[prediction])
                     array_predicoes.append(prediction)
@@ -61,7 +55,6 @@ def recognize_faces(network,  orig_frame, face_names, conf_min=0.7):
                 text = "{} -> {:.4f}".format(pred_name, conf)
 
             cv2.putText(frame, text, (start_x, start_y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-            # face = cv2.cvtColor(face_roi, cv2.COLOR_BGR2GRAY)
     return frame
 
 def mandar_mensagem(frame, nome):
@@ -81,5 +74,3 @@ def pegar_foragido(cpf):
     return firestore.pegarForagidoPeloCpf(cpf)
 
 network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")
-
-#deletar_prints_thread()

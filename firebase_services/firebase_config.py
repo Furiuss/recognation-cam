@@ -1,60 +1,9 @@
 import os
-# import pyrebase
-#
-# config = {
-#   "apiKey": "AIzaSyB_o_0G_UCLJIxV1HkXjm3lEQHM-Iqhaww",
-#   "authDomain": "face-recognation-tcc.firebaseapp.com",
-#   "databaseURL": "https://face-recognation-tcc-default-rtdb.firebaseio.com",
-#   "projectId": "face-recognation-tcc",
-#   "storageBucket": "face-recognation-tcc.appspot.com",
-#   "messagingSenderId": "868557823973",
-#   "appId": "1:868557823973:web:bfb8b19c733dc5ec6a990c",
-#   "measurementId": "G-6X71JB5FNT",
-#   "serviceAccount": "serviceAccount.json",
-#   "databaseURL": "https://face-recognation-tcc-default-rtdb.firebaseio.com"
-# }
-#
-# firebase = pyrebase.initialize_app(config)
-# storage = firebase.storage()
-# storage.child("gustavo-teste.jpg").put("User.gustavo.286.jpg")
-#
-#
-
-# from firebase import
-
-
-
-# import firebase_admin
-# from firebase_admin import db, credentials
-#
-# cred = credentials.Certificate("serviceAccount.json")
-# firebase_admin.initialize_app(cred, {"databaseURL": "https://face-recognation-tcc-default-rtdb.firebaseio.com"})
-#
-# ref = db.reference("/foragidos")
-# ref.set({
-#     "nome": "André",
-#     "idade": 19,
-# })
-# print(ref.get())
-
-
-# Import the Firebase service
 import firebase_admin
 from firebase_admin import credentials, db, storage
 
-# Other Modules
-# import json
-#
-# # Load appsettings JSON file
-# with open('appsettings.json', 'r') as json_file:
-#      appsettings= json.load(json_file)
-
-# Firebase-APIKey File
-API_KEY_PATH = os.path.join(os.path.dirname(__file__), '../service_account.json')  # Add your API file path
-
-# Initialize the default firebase app
+API_KEY_PATH = os.path.join(os.path.dirname(__file__), '../service_account.json')
 certificate = credentials.Certificate(API_KEY_PATH)
-# firebaseApp = firebase_admin.initialize_app(certificate, {'databaseURL': appsettings['DatabaseURL']})
 firebaseApp = firebase_admin.initialize_app(certificate, {"databaseURL": "https://face-recognation-tcc-default-rtdb.firebaseio.com",
                                                           "storageBucket": "face-recognation-tcc.appspot.com"})
 
@@ -102,14 +51,6 @@ class ForagidosCollections():
         blob.upload_from_filename(path)
         content['imagens'] = self.getUrl()
         self.collection.push(content)
-        # if self.key in content:
-        #     if not self.__findItem(content[self.key]):
-        #
-        #         return True
-        #     else:
-        #         raise Exception("Item already exists")
-        # else:
-        #     raise Exception("Key {0} not found".format(self.key))
 
     def pegarTodosForagidos(self):
         """ To get the entire todo items list """

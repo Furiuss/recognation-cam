@@ -11,7 +11,6 @@ from entities.Foragido import Foragido
 import customtkinter as ctk
 from recognition_webcam import *
 from face_capture_webcam import *
-import sys
 import os
 
 class CustomTkinterApp:
@@ -36,13 +35,7 @@ class CustomTkinterApp:
         self.tab_reconhecimento = Frame(self.notebook.tab('Reconhecimento'))
         self.tab_reconhecimento.configure()
 
-        # self.notebook.add(self.tab_treinamento, text="Treinamento")
-        # self.notebook.add(self.tab_reconhecimento, text="Reconhecimento")
-
         # Adicione widgets às abas (Treinamento)
-
-        # self.entrada_id = ctk.CTkEntry(self.tab_treinamento, placeholder_text="ID")
-        # self.entrada_id.pack(pady=10)
 
         self.entrada_nome = ctk.CTkEntry(self.tab_treinamento, placeholder_text="Nome")
         self.entrada_nome.pack()
@@ -76,17 +69,6 @@ class CustomTkinterApp:
                          corner_radius=0,
                          state="disabled")
         self.botao_parar_rec.place(relx = 0.99, rely =0.80, anchor = 'ne')
-        # self.resposta_id = ctk.CTkEntry(self.tab_reconhecimento, placeholder_text="ID")
-        # self.resposta_id.pack(pady=10)
-        #
-        # self.resposta_nome = ctk.CTkEntry(self.tab_reconhecimento, placeholder_text="Nome")
-        # self.resposta_nome.pack(pady=10)
-        #
-        # self.resposta_cpf = ctk.CTkEntry(self.tab_reconhecimento, placeholder_text="CPF")
-        # self.resposta_cpf.pack(pady=10)
-        #
-        # self.resposta_dataNascimento = ctk.CTkEntry(self.tab_reconhecimento, placeholder_text="Data de Nascimento")
-        # self.resposta_dataNascimento.pack(pady=10)
 
         # Finalmente, coloque o Notebook na janela principal
         self.notebook.pack(padx=10, pady=10, fill="both", expand=True)
@@ -106,10 +88,6 @@ class CustomTkinterApp:
 
     def capturarRosto(self):
         self.video_capture = cv2.VideoCapture(0)
-
-        # if self.entrada_id.get() == "":
-        #     messagebox.showwarning("Aviso", "O campo ID deve ser preenchido!",parent=self.root)
-        #     return
 
         if self.entrada_nome.get() == "":
             messagebox.showwarning("Aviso", "O campo Nome deve ser preenchido!",parent=self.root)
@@ -137,14 +115,11 @@ class CustomTkinterApp:
         with open("face_names.pickle", "wb") as f:
             pickle.dump(face_names, f)
 
-        # os.remove("lbph_classifier.yml")
-
         lbph_classifier = cv2.face.LBPHFaceRecognizer().create()
         lbph_classifier.train(faces, ids)
         lbph_classifier.write('lbph_classifier.yml')
         messagebox.showwarning("Aviso", "Para reconhecer é necessário reiniciar a aplicação")
         cv2.destroyAllWindows()
-        # self.reiniciar_aplicacao()
 
     def configurarReconhecimento(self):
         self.video_capture = cv2.VideoCapture(0)
@@ -170,10 +145,8 @@ class CustomTkinterApp:
         try:
             _, frame = self.video_capture.read()
 
-
             if frame is not None:
 
-                    # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                     if max_width is not None:
                         video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
                         frame = cv2.resize(frame, (video_width, video_height))
@@ -183,10 +156,7 @@ class CustomTkinterApp:
                     self.sample = self.sample + 1
                     photo_sample = self.sample + starting_sample_number - 1 if starting_sample_number > 0 else self.sample
                     image_name = self.person_name + "." + str(photo_sample) + ".jpg"
-                    # print(image_name)
-                    print(self.final_path)
-                    cv2.imwrite(self.final_path + "/" + image_name, face_roi)  # save the cropped face (ROI)
-                    # cv2.imwrite(final_path_full + "/" + image_name, frame)  # save the full image too (not cropped)
+                    cv2.imwrite(self.final_path + "/" + image_name, face_roi)
                     print("=> photo " + str(self.sample))
 
                     cv2.imshow("face", face_roi)
@@ -224,11 +194,6 @@ class CustomTkinterApp:
 
         self.botao_capturarRosto.configure(state="normal")
         self.botao_parar.configure(state="disabled")
-
-    def reiniciar_aplicacao(self):
-        python_executable = sys.executable
-        script = os.path.abspath(__file__)
-        os.execl(python_executable, python_executable, script)
 
     def aplicar_configuracoes_botoes(self):
         self.botao_parar_rec.configure(state="normal", text="x", fg_color="red")

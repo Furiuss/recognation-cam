@@ -1,5 +1,3 @@
-import cv2
-import numpy as np
 
 def resize_video(width, height, max_width = 600):
 

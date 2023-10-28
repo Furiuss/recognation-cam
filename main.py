@@ -85,6 +85,7 @@ class CustomTkinterApp:
         self.folder_faces = "dataset/"
         self.final_path = ""
 
+    # CADASTRO
     def capturarRosto(self):
         self.video_capture = cv2.VideoCapture(0)
 
@@ -95,6 +96,7 @@ class CustomTkinterApp:
         if not self.video_capture.isOpened():
             messagebox.showerror("Erro", "Não foi possível abrir a webcam.")
             return
+
         # adicionarImagensDeForagido()
         self.botao_capturarRosto.configure(state="disabled")
         self.botao_parar.configure(state="normal")
@@ -103,7 +105,7 @@ class CustomTkinterApp:
         create_folders(self.final_path)
         self.mostrarWebCam()
 
-
+    # TREINAMENTO
     def treinarAlgoritmo(self):
         ids, faces, face_names = get_image_data(training_path)
 
@@ -125,6 +127,7 @@ class CustomTkinterApp:
         self.reconhecer()
         self.aplicar_configuracoes_botoes()
 
+    # RECONHECIMENTO
     def reconhecer(self):
         try:
             _, frame = self.video_capture.read()
@@ -140,6 +143,7 @@ class CustomTkinterApp:
             self.resetar_configuracoes_botoes()
             self.pararWebCam()
 
+    #
     def mostrarWebCam(self):
         try:
             _, frame = self.video_capture.read()
@@ -162,16 +166,7 @@ class CustomTkinterApp:
                     self.display_frame(processed_frame)
                     self.root.after(1, self.mostrarWebCam)
             else:
-                foragido = Foragido(
-                    nome=self.entrada_nome.get(),
-                    data_nascimento=self.entrada_dataNascimento.get(),
-                    cpf=hf.remover_caracteres_especiais(self.entrada_cpf.get()),
-                    created_at=datetime.datetime.now(),
-                    updated_at=datetime.datetime.now(),
-                    eh_foragido=True
-                )
-                firestore.create(foragido)
-
+                self.cadastrar_no_banco()
                 messagebox.showinfo("Ok", "Dados Cadastrados com Sucesso")
                 self.entrada_nome.delete(0, 'end')
                 self.entrada_cpf.delete(0, 'end')
@@ -180,9 +175,19 @@ class CustomTkinterApp:
             messagebox.showwarning("Aviso", "Por favor, mantenha o rosto mais próximo à câmera e mova-o lentamente. 📷")
             self.capturarRosto()
 
+    def cadastrar_no_banco(self):
+        foragido = Foragido(
+            nome=self.entrada_nome.get(),
+            data_nascimento=self.entrada_dataNascimento.get(),
+            cpf=hf.remover_caracteres_especiais(self.entrada_cpf.get()),
+            created_at=datetime.datetime.now(),
+            updated_at=datetime.datetime.now(),
+            eh_foragido=True
+        )
+        firestore.create(foragido)
+
     def display_frame(self, frame):
         photo = tk.PhotoImage(data=cv2.imencode(".png", frame)[1].tobytes())
-
         self.canvas.create_image(0, 0, image=photo, anchor=tk.NW)
         self.canvas.image = photo
 

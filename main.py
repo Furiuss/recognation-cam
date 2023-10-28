@@ -4,8 +4,7 @@ from tkinter import messagebox
 import cv2.face
 
 from train_recognizers import *
-# from firebase_services.firebase_config import ForagidosCollections
-import firestore as firestore
+import helper_functions as hf
 import datetime
 from entities.Foragido import Foragido
 import customtkinter as ctk
@@ -99,7 +98,7 @@ class CustomTkinterApp:
         # adicionarImagensDeForagido()
         self.botao_capturarRosto.configure(state="disabled")
         self.botao_parar.configure(state="normal")
-        self.person_name = self.entrada_nome.get() + "-" + self.entrada_cpf.get()
+        self.person_name = hf.remover_caracteres_especiais(self.entrada_nome.get()) + "-" + hf.remover_caracteres_especiais(self.entrada_cpf.get())
         self.final_path = os.path.sep.join([self.folder_faces, self.person_name])
         create_folders(self.final_path)
         self.mostrarWebCam()
@@ -166,7 +165,7 @@ class CustomTkinterApp:
                 foragido = Foragido(
                     nome=self.entrada_nome.get(),
                     data_nascimento=self.entrada_dataNascimento.get(),
-                    cpf=self.entrada_cpf.get(),
+                    cpf=hf.remover_caracteres_especiais(self.entrada_cpf.get()),
                     created_at=datetime.datetime.now(),
                     updated_at=datetime.datetime.now(),
                     eh_foragido=True

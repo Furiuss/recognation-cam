@@ -3,7 +3,8 @@ from tkinter import messagebox
 
 import cv2.face
 
-from train_recognizers import *
+# from train_recognizers import *
+from treinamento import obterImagemTreinamento
 import helper_functions as hf
 import datetime
 from entities.Foragido import Foragido
@@ -82,8 +83,8 @@ class CustomTkinterApp:
         self.max_width = 800
 
         self.person_name = ""
-        self.folder_faces = "dataset/"
-        self.final_path = ""
+        self.pasta_rostos = "dataset/"
+        self.caminho_imagem = ""
         self.network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")
 
     # CADASTRO
@@ -98,27 +99,24 @@ class CustomTkinterApp:
             messagebox.showerror("Erro", "Não foi possível abrir a webcam.")
             return
 
-        # adicionarImagensDeForagido()
         self.botao_capturarRosto.configure(state="disabled")
         self.botao_parar.configure(state="normal")
         self.person_name = hf.remover_caracteres_especiais(self.entrada_nome.get()) + "-" + hf.remover_caracteres_especiais(self.entrada_cpf.get())
-        self.final_path = os.path.sep.join([self.folder_faces, self.person_name])
-        create_folders(self.final_path)
+        self.caminho_imagem = os.path.sep.join([self.pasta_rostos, self.person_name])
+        criar_pastas(caminho_da_imagem=self.caminho_imagem)
         self.mostrarWebCam()
 
     # TREINAMENTO
     def treinarAlgoritmo(self):
-        ids, faces, face_names = get_image_data('dataset/')
-
-        for n in face_names:
-            print(str(n) + " => ID " + str(face_names[n]))
+        ids, rostos, nomes_rostos = obterImagemTreinamento('dataset/')
 
         # store names and ids in a pickle file
+        # armazena nomes e ids em um pickle file
         with open("face_names.pickle", "wb") as f:
-            pickle.dump(face_names, f)
+            pickle.dump(nomes_rostos, f)
 
         lbph_classifier = cv2.face.LBPHFaceRecognizer().create()
-        lbph_classifier.train(faces, ids)
+        lbph_classifier.train(rostos, ids)
         lbph_classifier.write('lbph_classifier.yml')
         messagebox.showwarning("Aviso", "Para reconhecer é necessário reiniciar a aplicação")
         cv2.destroyAllWindows()
@@ -160,7 +158,7 @@ class CustomTkinterApp:
                     self.sample = self.sample + 1
                     photo_sample = self.sample + starting_sample_number - 1 if starting_sample_number > 0 else self.sample
                     image_name = self.person_name + "." + str(photo_sample) + ".jpg"
-                    cv2.imwrite(self.final_path + "/" + image_name, face_roi)
+                    cv2.imwrite(self.caminho_imagem + "/" + image_name, face_roi)
                     print("=> photo " + str(self.sample))
 
                     cv2.imshow("face", face_roi)

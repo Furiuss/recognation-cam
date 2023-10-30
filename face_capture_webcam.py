@@ -11,9 +11,9 @@ max_width = 800           # leave None if you don't want to resize and want to k
 starting_sample_number = 0  # default=0, but if you already have taken photos for the same person AND you don't want to overwrite them you need to choose a number higher than the last number of samples.
 
 # # Create the final folder where the photos will be saved (if the path already doesn't exist)
-def create_folders(final_path):
-    if not os.path.exists(final_path):
-        os.makedirs(final_path)
+def criar_pastas(caminho_da_imagem):
+    if not os.path.exists(caminho_da_imagem):
+        os.makedirs(caminho_da_imagem)
 
 # Return the detected face using SSD
 def detect_face_ssd(network, orig_frame, show_conf=True, conf_min=0.7):

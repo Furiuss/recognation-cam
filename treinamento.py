@@ -20,10 +20,11 @@ def obterImagemTreinamento(caminho_treinamento):
 
     caminho_imagens = [os.path.join(arquivo, f) for f in os.listdir(arquivo)]
     for caminho in caminho_imagens:
+      # converte para escala de cinza
       imagem = Image.open(caminho).convert('L')
+      # transforma a imagem em uma representação númerica
       face = np.array(imagem, 'uint8')
       face = cv2.resize(face, (90, 120))
-      print(str(id) + " <-- " + caminho)
       ids.append(id)
       faces.append(face)
       cv2.imshow("Treinando faces...", face)
@@ -34,18 +35,3 @@ def obterImagemTreinamento(caminho_treinamento):
       id += 1
 
   return np.array(ids), faces, nome_faces
-
-ids, faces, nome_faces = obterImagemTreinamento(caminho_treinamento)
-
-for nome in nome_faces:
-  print(str(nome) + " => ID " + str(nome_faces[nome]))
-
-# armazenar nomes e ids em um arquivo pickle
-with open("face_names.pickle", "wb") as f:
-  pickle.dump(nome_faces, f)
-
-print('Treinamento LBPH iniciado......')
-lbph_classifier = cv2.face.LBPHFaceRecognizer_create()
-lbph_classifier.train(faces, ids)
-lbph_classifier.write('lbph_classifier.yml')
-print('...... Completado!\n')

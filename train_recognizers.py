@@ -4,12 +4,8 @@ import os
 from PIL import Image
 import pickle
 
-
-training_path = 'dataset/'
-
 def get_image_data(path_train):
   subdirs = [os.path.join(path_train, f) for f in os.listdir(path_train)]
-  #print(subdirs)
   faces = []
   ids = []
 

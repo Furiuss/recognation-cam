@@ -73,4 +73,4 @@ def mandar_mensagem_thread(frame, nome):
 def pegar_foragido(cpf):
     return firestore.pegarForagidoPeloCpf(cpf)
 
-network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")
+# network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")

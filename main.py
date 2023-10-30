@@ -24,11 +24,11 @@ class CustomTkinterApp:
         # Crie um widget Notebook para as abas
         # self.notebook = ttk.Notebook(root)
         self.notebook = ctk.CTkTabview(root)
-        self.notebook.add("Coleção")
+        self.notebook.add("Cadastro")
         self.notebook.add("Reconhecimento")
 
         # Crie e adicione abas ao Notebook
-        self.tab_treinamento = Frame(self.notebook.tab('Coleção'))
+        self.tab_treinamento = Frame(self.notebook.tab('Cadastro'))
         self.tab_treinamento.configure()
 
         self.tab_reconhecimento = Frame(self.notebook.tab('Reconhecimento'))
@@ -84,6 +84,7 @@ class CustomTkinterApp:
         self.person_name = ""
         self.folder_faces = "dataset/"
         self.final_path = ""
+        self.network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")
 
     # CADASTRO
     def capturarRosto(self):
@@ -107,7 +108,7 @@ class CustomTkinterApp:
 
     # TREINAMENTO
     def treinarAlgoritmo(self):
-        ids, faces, face_names = get_image_data(training_path)
+        ids, faces, face_names = get_image_data('dataset/')
 
         for n in face_names:
             print(str(n) + " => ID " + str(face_names[n]))
@@ -135,7 +136,7 @@ class CustomTkinterApp:
             video_width, video_height = resize_video(frame.shape[1], frame.shape[0], self.max_width)
             frame = cv2.resize(frame, (video_width, video_height))
 
-            processed_frame = recognize_faces(network,  frame, face_names)
+            processed_frame = recognize_faces(self.network,  frame, face_names)
             self.display_frame(processed_frame)
             self.root.after(1, self.reconhecer)
         except Exception as e:
@@ -154,7 +155,7 @@ class CustomTkinterApp:
                         video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
                         frame = cv2.resize(frame, (video_width, video_height))
 
-                    face_roi, processed_frame = detect_face_ssd(network, frame)
+                    face_roi, processed_frame = detect_face_ssd(self.network, frame)
 
                     self.sample = self.sample + 1
                     photo_sample = self.sample + starting_sample_number - 1 if starting_sample_number > 0 else self.sample

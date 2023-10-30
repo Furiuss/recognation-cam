@@ -35,5 +35,3 @@ else:
         cv2.imwrite(caminho_imagem_processada, imagem_processada)
 
         print(f"Imagem {arquivo} processada e salva como {caminho_imagem_processada}")
-
-print("Processamento de imagens concluído.")

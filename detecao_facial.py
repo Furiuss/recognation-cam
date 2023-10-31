@@ -1,12 +1,6 @@
 import cv2
 import numpy as np
 import os
-import re
-
-# the same function we've used before
-from helper_functions import resize_video
-
-detector = "ssd"
 
 def criar_pastas(caminho_da_imagem):
     if not os.path.exists(caminho_da_imagem):
@@ -24,8 +18,9 @@ def detect_face_ssd(network, orig_frame, show_conf=True, conf_min=0.7):
 
     face_roi = None
     for i in range(0, detections.shape[2]):
-        confidence = detections[0, 0, i, 2]
-        if confidence > conf_min:
+        confianca = detections[0, 0, i, 2]
+        if confianca > conf_min:
+            
             # Desenhar o a caixa delimitadora
             bbox = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
             (start_x, start_y, end_x, end_y) = bbox.astype("int")
@@ -38,6 +33,6 @@ def detect_face_ssd(network, orig_frame, show_conf=True, conf_min=0.7):
             face_roi = cv2.resize(face_roi, (90, 120))
             cv2.rectangle(frame, (start_x, start_y), (end_x, end_y), (0, 255, 0), 2)
             if show_conf:
-                text_conf = "{:.2f}%".format(confidence * 100)
+                text_conf = "{:.2f}%".format(confianca * 100)
                 cv2.putText(frame, text_conf, (start_x, start_y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
     return face_roi, frame

@@ -5,8 +5,216 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59a9ec2e-9e18-4e3e-8d90-1af918a1ae5a" name="Changes" comment="/">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.97.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/guilherme/guilherme.99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/matheus/matheus.9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/isaque/isaque.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/isaque/isaque.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/isaque/isaque.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/isaque/isaque.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/isaque/isaque.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/miguel/miguel.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/miguel/miguel.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/miguel/miguel.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/miguel/miguel.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/miguel/miguel.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/miguel/miguel.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/miguel/miguel.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_full/mito/mito.9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/detecao_facial.py" beforeDir="false" afterPath="$PROJECT_DIR$/detecao_facial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_names.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/face_names.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase_services/firebase_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbph_classifier.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lbph_classifier.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service_account.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/treinamento.py" beforeDir="false" afterPath="$PROJECT_DIR$/treinamento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +246,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "mesclando-alteracoes",
-    "last_opened_file_path": "C:/Users/hugon/OneDrive/Documentos/detection_recogntion/main.py",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mesclando-alteracoes&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hugon/OneDrive/Documentos/detection_recogntion/main.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion" />
@@ -71,7 +279,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11 (recognition-cam)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -245,14 +452,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="dataset de imagens" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/treinamento.py</url>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="processed_frame" />

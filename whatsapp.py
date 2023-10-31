@@ -1,9 +1,6 @@
 import os
 from twilio.rest import Client
 from dotenv import load_dotenv
-import cv2
-import numpy as np
-
 
 load_dotenv()
 

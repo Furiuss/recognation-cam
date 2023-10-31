@@ -3,7 +3,6 @@ from tkinter import messagebox
 
 import cv2.face
 
-# from train_recognizers import *
 from treinamento import obterImagemTreinamento
 import helper_functions as hf
 import datetime
@@ -23,7 +22,6 @@ class CustomTkinterApp:
         self.max_width = 800
 
         # Crie um widget Notebook para as abas
-        # self.notebook = ttk.Notebook(root)
         self.notebook = ctk.CTkTabview(root)
         self.notebook.add("Cadastro")
         self.notebook.add("Reconhecimento")
@@ -100,7 +98,7 @@ class CustomTkinterApp:
     # CADASTRO
     def capturarRosto(self):
         self.validar()
-
+        self.configuracoes_iniciais()
         self.video_capture = cv2.VideoCapture(0)
 
         if not self.video_capture.isOpened():
@@ -115,7 +113,7 @@ class CustomTkinterApp:
 
             if frame is not None:
                     # redimensionam o tamanho do vídeo para garantir que ele se ajuste a certos parâmetros.
-                    largura_video, altura_video = resize_video(frame.shape[1], frame.shape[0], self.max_width)
+                    largura_video, altura_video = hf.resize_video(frame.shape[1], frame.shape[0], self.max_width)
 
                     frame = cv2.resize(frame, (largura_video, altura_video))
 
@@ -164,7 +162,7 @@ class CustomTkinterApp:
         try:
             _, frame = self.video_capture.read()
 
-            video_width, video_height = resize_video(frame.shape[1], frame.shape[0], self.max_width)
+            video_width, video_height = hf.resize_video(frame.shape[1], frame.shape[0], self.max_width)
             frame = cv2.resize(frame, (video_width, video_height))
 
             frame_processado = reconhecer_rostos(self.network,  frame, face_names)

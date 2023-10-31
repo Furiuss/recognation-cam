@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59a9ec2e-9e18-4e3e-8d90-1af918a1ae5a" name="Changes" comment="/">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_capture_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/detecao_facial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase_services/firebase_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firestore.py" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognition_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconhecimento.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_recognizers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/treinar_algoritmos.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/CapturaRosto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecao_facial.py" beforeDir="false" afterPath="$PROJECT_DIR$/detecao_facial.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +38,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;tornando-tudo-legivel&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hugon/OneDrive/Documentos/detection_recogntion/main.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "mesclando-alteracoes",
+    "last_opened_file_path": "C:/Users/hugon/OneDrive/Documentos/detection_recogntion/main.py",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hugon\OneDrive\Documentos\detection_recogntion" />
@@ -157,8 +149,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.reconhecimento" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.reconhecimento" />
       <item itemvalue="Python.train_recognizers" />
       <item itemvalue="Python.trainingdemo" />
     </list>
@@ -253,6 +245,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="dataset de imagens" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/treinamento.py</url>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="processed_frame" />

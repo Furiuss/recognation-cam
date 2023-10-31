@@ -80,37 +80,69 @@ class CustomTkinterApp:
 
         self.contador = 1
 
-        self.max_width = 800
-
         self.person_name = ""
         self.pasta_rostos = "dataset/"
         self.caminho_imagem = ""
         self.network = cv2.dnn.readNetFromCaffe("deploy.prototxt.txt", "res10_300x300_ssd_iter_140000.caffemodel")
 
-    # CADASTRO
-    def capturarRosto(self):
-        self.video_capture = cv2.VideoCapture(0)
-
+    def validar(self):
         if self.entrada_nome.get() == "":
             messagebox.showwarning("Aviso", "O campo Nome deve ser preenchido!",parent=self.root)
             return
 
-        if not self.video_capture.isOpened():
-            messagebox.showerror("Erro", "Não foi possível abrir a webcam.")
-            return
-
+    def configuracoes_iniciais(self):
         self.botao_capturarRosto.configure(state="disabled")
         self.botao_parar.configure(state="normal")
         self.person_name = hf.remover_caracteres_especiais(self.entrada_nome.get()) + "-" + hf.remover_caracteres_especiais(self.entrada_cpf.get())
         self.caminho_imagem = os.path.sep.join([self.pasta_rostos, self.person_name])
         criar_pastas(caminho_da_imagem=self.caminho_imagem)
+
+    # CADASTRO
+    def capturarRosto(self):
+        self.validar()
+
+        self.video_capture = cv2.VideoCapture(0)
+
+        if not self.video_capture.isOpened():
+            messagebox.showerror("Erro", "Não foi possível abrir a webcam.")
+            return
+
         self.mostrarWebCam()
+
+    def mostrarWebCam(self):
+        try:
+            _, frame = self.video_capture.read()
+
+            if frame is not None:
+
+                    largura_video, altura_video = resize_video(frame.shape[1], frame.shape[0], self.max_width)
+                    frame = cv2.resize(frame, (largura_video, altura_video))
+
+                    face_roi, processed_frame = detect_face_ssd(self.network, frame)
+
+                    starting_sample_number = 0
+                    self.sample = self.sample + 1
+                    photo_sample = self.sample + starting_sample_number - 1 if starting_sample_number > 0 else self.sample
+                    image_name = self.person_name + "." + str(photo_sample) + ".jpg"
+                    cv2.imwrite(self.caminho_imagem + "/" + image_name, face_roi)
+
+                    cv2.imshow("face", face_roi)
+                    self.display_frame(processed_frame)
+                    self.root.after(1, self.mostrarWebCam)
+            else:
+                self.cadastrar_no_banco()
+                messagebox.showinfo("Ok", "Dados Cadastrados com Sucesso")
+                self.entrada_nome.delete(0, 'end')
+                self.entrada_cpf.delete(0, 'end')
+                self.entrada_dataNascimento.delete(0, 'end')
+        except cv2.error:
+            messagebox.showwarning("Aviso", "Por favor, mantenha o rosto mais próximo à câmera e mova-o lentamente. 📷")
+            self.capturarRosto()
 
     # TREINAMENTO
     def treinarAlgoritmo(self):
         ids, rostos, nomes_rostos = obterImagemTreinamento('dataset/')
 
-        # store names and ids in a pickle file
         # armazena nomes e ids em um pickle file
         with open("face_names.pickle", "wb") as f:
             pickle.dump(nomes_rostos, f)
@@ -141,38 +173,6 @@ class CustomTkinterApp:
             print(e)
             self.resetar_configuracoes_botoes()
             self.pararWebCam()
-
-    #
-    def mostrarWebCam(self):
-        try:
-            _, frame = self.video_capture.read()
-
-            if frame is not None:
-
-                    if max_width is not None:
-                        video_width, video_height = resize_video(frame.shape[1], frame.shape[0], max_width)
-                        frame = cv2.resize(frame, (video_width, video_height))
-
-                    face_roi, processed_frame = detect_face_ssd(self.network, frame)
-
-                    self.sample = self.sample + 1
-                    photo_sample = self.sample + starting_sample_number - 1 if starting_sample_number > 0 else self.sample
-                    image_name = self.person_name + "." + str(photo_sample) + ".jpg"
-                    cv2.imwrite(self.caminho_imagem + "/" + image_name, face_roi)
-                    print("=> photo " + str(self.sample))
-
-                    cv2.imshow("face", face_roi)
-                    self.display_frame(processed_frame)
-                    self.root.after(1, self.mostrarWebCam)
-            else:
-                self.cadastrar_no_banco()
-                messagebox.showinfo("Ok", "Dados Cadastrados com Sucesso")
-                self.entrada_nome.delete(0, 'end')
-                self.entrada_cpf.delete(0, 'end')
-                self.entrada_dataNascimento.delete(0, 'end')
-        except cv2.error:
-            messagebox.showwarning("Aviso", "Por favor, mantenha o rosto mais próximo à câmera e mova-o lentamente. 📷")
-            self.capturarRosto()
 
     def cadastrar_no_banco(self):
         foragido = Foragido(

@@ -8,8 +8,6 @@ import whatsapp
 
 threshold = 96
 
-max_width = 800
-
 face_names = {}
 with open("face_names.pickle", "rb") as f:
     original_labels = pickle.load(f)

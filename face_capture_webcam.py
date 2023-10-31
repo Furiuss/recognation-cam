@@ -6,11 +6,8 @@ import re
 # the same function we've used before
 from helper_functions import resize_video
 
-detector = "ssd"  # we suggest to keep SSD for more accurate detections
-max_width = 800           # leave None if you don't want to resize and want to keep the original size of the video stream frame
-starting_sample_number = 0  # default=0, but if you already have taken photos for the same person AND you don't want to overwrite them you need to choose a number higher than the last number of samples.
+detector = "ssd"
 
-# # Create the final folder where the photos will be saved (if the path already doesn't exist)
 def criar_pastas(caminho_da_imagem):
     if not os.path.exists(caminho_da_imagem):
         os.makedirs(caminho_da_imagem)

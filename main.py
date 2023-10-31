@@ -9,8 +9,8 @@ import helper_functions as hf
 import datetime
 from entities.Foragido import Foragido
 import customtkinter as ctk
-from recognition_webcam import *
-from face_capture_webcam import *
+from reconhecimento import *
+from detecao_facial import *
 import os
 
 class CustomTkinterApp:
@@ -167,8 +167,8 @@ class CustomTkinterApp:
             video_width, video_height = resize_video(frame.shape[1], frame.shape[0], self.max_width)
             frame = cv2.resize(frame, (video_width, video_height))
 
-            processed_frame = recognize_faces(self.network,  frame, face_names)
-            self.display_frame(processed_frame)
+            frame_processado = reconhecer_rostos(self.network,  frame, face_names)
+            self.display_frame(frame_processado)
             self.root.after(1, self.reconhecer)
         except Exception as e:
             print(e)

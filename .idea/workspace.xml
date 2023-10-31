@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59a9ec2e-9e18-4e3e-8d90-1af918a1ae5a" name="Changes" comment="/">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_capture_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_capture_webcam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_capture_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/detecao_facial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase_services/firebase_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firestore.py" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognition_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition_webcam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognition_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconhecimento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_recognizers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/treinar_algoritmos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/CapturaRosto.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +34,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2TvzWDNfifpWKNq868pUytTPijC" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -69,8 +79,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (recognition-cam)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
@@ -82,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="recognition_webcam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reconhecimento" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="detection_recogntion" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,7 +105,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recognition_webcam.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Usuario\Documents\Projetos\recognition-cam\reconhecimento.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,15 +157,15 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.reconhecimento" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.recognition_webcam" />
       <item itemvalue="Python.train_recognizers" />
       <item itemvalue="Python.trainingdemo" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.recognition_webcam" />
+        <item itemvalue="Python.reconhecimento" />
         <item itemvalue="Python.train_recognizers" />
         <item itemvalue="Python.trainingdemo" />
       </list>
@@ -242,20 +253,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="dataset de imagens" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/firestore.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/firestore.py</url>
-          <line>91</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="processed_frame" />

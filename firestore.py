@@ -4,7 +4,6 @@ from firebase_admin import firestore, credentials, storage
 import uuid
 
 myuuid = uuid.uuid4()
-from firebase import firebase
 import datetime
 import os
 from datetime import date
@@ -28,7 +27,6 @@ credPyrebase = {
 
 pyrebase_service = pyrebase.initialize_app(credPyrebase)
 storage = pyrebase_service.storage()
-# firebase = firebase.FirebaseApplication('<DATABASE_URL>', None)
 collection_ref = db.collection('foragidos')
 
 def create(foragido: Foragido):
@@ -83,46 +81,14 @@ def apagar_prints_existentes():
     for imagem in folder_ref.list_files():
         storage.delete(imagem.name)
 
-# def adicionar
-
-# def pegarCollection():
-#     return collection_ref.get()
-
 def pegarForagidoPeloCpf(cpf):
     document = collection_ref.where('cpf', '==', cpf).get()
     snapshot = document[0]
-    # snapshot = collection_ref.document(document[0].id).get()
 
     if snapshot == None:
         return False
 
     return snapshot.to_dict()
-    # item = None
-    # for key, val in snapshot:
-    #     if val[key] == id:
-    #         item = key
-    #         break
-    # if (item != None):
-    #     node = db.collection.child(item)
-    #     return node
-    # else:
-    #     return False
-
-# def armazenar_imagens_foragido(id):
-#     nome_pasta = id
-#     array_imagens_links = pegarImagensForagido(id)
-#
-#     if not os.path.exists(nome_pasta):
-#         os.makedirs(nome_pasta)
-#
-#     for nome_arquivo in array_imagens_links:
-#         caminho_arquivo = os.path.join(nome_pasta, nome_arquivo)
-#         storage.child(caminho_arquivo)
-#
-# def pegarImagensForagido(id):
-#     foragido = pegarForagidoPeloId(id)
-#     imagens_foragido = foragido['imagens']
-#     return imagens_foragido
 
 def adicionarPrintSuspeito(nome, nome_imagem):
     storage.child(nome).put(nome_imagem)
@@ -137,26 +103,3 @@ def adicionarImagensDeForagido():
             print(path)
             count+=1
             storage.child(f"dataset/{subdir}").put(path)
-
-# adicionarImagensDeForagido()
-# create()
-# print(pegarForagidoPeloId('70629522146'))
-# read_collection()
-# array = pegarImagensForagido('70629522146')
-# for imagem in array:
-#     print(imagem)
-# adicionarPrintSuspeito()
-# pegarTodasAsImagens()
-# add_collection()
-# armazenar_imagens_foragido('70629522146')
-
-# data = date.today().strftime('%d/%m/%Y')
-# foragido = Foragido(nome='Matcholas',
-#                     data_nascimento=data,
-#                     cpf='70629522126',
-#                     created_at=data,
-#                     eh_foragido=True)
-# foragido.adicionarId()
-# create(foragido)
-# print(pegarForagidoPeloId(foragido.id))
-# print(pegarTodasAsImagens())

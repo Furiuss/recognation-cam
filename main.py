@@ -114,8 +114,9 @@ class CustomTkinterApp:
             _, frame = self.video_capture.read()
 
             if frame is not None:
-
+                    # redimensionam o tamanho do vídeo para garantir que ele se ajuste a certos parâmetros.
                     largura_video, altura_video = resize_video(frame.shape[1], frame.shape[0], self.max_width)
+
                     frame = cv2.resize(frame, (largura_video, altura_video))
 
                     face_roi, processed_frame = detect_face_ssd(self.network, frame)
